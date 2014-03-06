@@ -19,6 +19,7 @@
     "almond",
     "registry"
   ],
+  "main": "./index.js",
   "engines": {},
   "devDependencies": {},
   "scripts": {},

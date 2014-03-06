@@ -12,6 +12,7 @@
     },
     keywords: ['modules', 'require', 'define', 'commonjs', 'requirejs', 'almond',
         'registry'],
+    main: './index.js',
     engines: {},
     devDependencies: {},
     scripts: {},
