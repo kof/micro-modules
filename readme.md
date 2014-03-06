@@ -4,7 +4,7 @@ This implementation will work with ANY existing commonjs modules where almond or
 
 But the main reason is - control over execution order of the modules.
 
-- Absolut minimalistic, few lines of code.
+- Absolutely minimalistic, few lines of code.
 - Define your module.
 - Require your module.
 - Module factory executed only when required.
