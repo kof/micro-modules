@@ -30,9 +30,10 @@ function define(id, deps, factory) {
         deps = null
     }
 
+    if (modules[id]) throw new Error('Module ' + id + ' already defined.')
     if (typeof factory != 'function') throw new Error('Module factory required.')
 
-    module = {factory: factory, id: id}
+    module = {id: id, factory: factory}
 
     if (id) {
         modules[id] = module
