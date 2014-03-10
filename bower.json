@@ -1,7 +1,7 @@
 {
   "name": "micro-modules",
   "description": "Micro implementation of commonjs modules.",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": {
     "name": "Oleg Slobodskoi",
     "email": "oleg008@gmail.com"

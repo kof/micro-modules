@@ -7,16 +7,10 @@
  * @license MIT
  */
 
-(function(window) {
-'use strict'
+var define, require
 
-/**
- * Modules registry.
- *
- * @type {Object}
- * @api public
- */
-var modules = define.modules = {}
+(function() {
+'use strict'
 
 /**
  * Define a module.
@@ -26,7 +20,7 @@ var modules = define.modules = {}
  * @param {Function} factory
  * @api public
  */
-function define(id, deps, factory) {
+define = function(id, deps, factory) {
     var module
 
     // define(function() {})
@@ -52,7 +46,13 @@ function define(id, deps, factory) {
     }
 }
 
-window.define = define
+/**
+ * Modules registry.
+ *
+ * @type {Object}
+ * @api public
+ */
+var modules = define.modules = {}
 
 /**
  * Execute the module factory.
@@ -71,7 +71,7 @@ define.exec = function(module) {
  * @return {Mixed} module.exports
  * @api public
  */
-function require(id) {
+require = function(id) {
     var module = modules[id],
         newExports
 
@@ -86,7 +86,5 @@ function require(id) {
     return module.exports
 }
 
-window.require = require
-
-}(window))
+}())
 
