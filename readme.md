@@ -4,14 +4,14 @@ Everything you need to write modular javascript!
 
 This implementation will work with ANY existing commonjs modules where almond or requirejs would work. This module is created because I am not using the most features of requirejs and because I can live without the most features of almond.
 
-But the main reason is - control over execution order of the modules.
+Now you can write a framework of any size modular from the beginning and provide a standalone version without overhead. Every module of your framework stays commonjs conform and can be used separately.
 
-- Absolutely minimalistic, few lines of code.
-- Define your module.
-- Require your module.
-- Module factory executed only when required.
-- You control the execution order by requiring modules!
-- Define aliases.
+The best thing about it - control over module factory execution and execution order.
+
+- Module factory is executed first, when a require() call for this module is executed. Almond and requirejs will execute factory of module A when module B depends on A and factory A gets executed. In fact, all modules depend on each other, so almond will execute all of them, regardless if they are really used or not.
+- Commonjs conform.
+- 500bytes minified and gzipped.
+
 
 ## Outside of this modules scope
 - Relative path resolution. (Ids are format agnostic strings.)
