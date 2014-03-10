@@ -1,7 +1,7 @@
 {
   "name": "micro-modules",
   "description": "Micro implementation of commonjs modules.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": {
     "name": "Oleg Slobodskoi",
     "email": "oleg008@gmail.com"
@@ -21,7 +21,10 @@
   ],
   "main": "./index.js",
   "engines": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "uglify-js": "2.4.x",
+    "xpkg": "0.2.xpkg"
+  },
   "scripts": {},
   "licenses": [
     {

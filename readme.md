@@ -1,5 +1,7 @@
 ## Micro implementation of commonjs modules
 
+Everything you need to write modular javascript!
+
 This implementation will work with ANY existing commonjs modules where almond or requirejs would work. This module is created because I am not using the most features of requirejs and because I can live without the most features of almond.
 
 But the main reason is - control over execution order of the modules.

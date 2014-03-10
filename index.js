@@ -1,3 +1,12 @@
+/**
+ * Micro implementation of commonjs modules.
+ * Everything you need to write modular javascript!
+ *
+ * @copyright Oleg Slobodskoi 2014
+ * @website https://github.com/kof/micro-modules
+ * @license MIT
+ */
+
 (function(window) {
 'use strict'
 
